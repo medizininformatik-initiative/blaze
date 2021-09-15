@@ -4,7 +4,7 @@ services:
     container_name: fhir-server
     build: .
     environment:
-      BASE_URL: "http://localhost:8080"
+      BASE_URL: "http://fhir-server:8080"
       JAVA_TOOL_OPTIONS: "-Xmx4g"
       LOG_LEVEL: debug
     ports:

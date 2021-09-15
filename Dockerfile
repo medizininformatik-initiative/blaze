@@ -1,4 +1,4 @@
-FROM ghcr.io/samply/blaze:e91153ff6592a182e59f8bbfcd6beb784652fdf0
+FROM ghcr.io/samply/blaze:0.12.0-rc.2
 
 USER root
 
