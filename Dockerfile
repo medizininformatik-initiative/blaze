@@ -1,4 +1,4 @@
-FROM ghcr.io/samply/blaze:0.12.0-rc.2
+FROM samply/blaze:0.12.0-rc.4
 
 USER root
 
