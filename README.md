@@ -1,19 +1,21 @@
-# Blaze Codex Project
+# CODEX Blaze
 
-This repsository builds a blaze server, which includes the search parameters neccessary for the codex project
+This repository contains a Blaze server image, which includes the search parameters necessary for the CODEX project.
 
-## to start locally
+The image is based on Blaze [v0.12.2](https://github.com/samply/blaze/releases/tag/v0.12.2).
+
+## Start locally
 
 `docker-compose up -d`
 
-## To build manually
+## Build manually
 
-`docker build -t codex-blaze:0.0.1 .`
+`docker build -t codex-blaze:0.12.2 .`
 
 or using docker compose:
 
 `docker-compose build`
 
-## initialise testdata
+## Initialise testdata
 
 `bash init-testdata.sh`
