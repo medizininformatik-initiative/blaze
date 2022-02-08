@@ -2,7 +2,7 @@
 
 This repository contains a Blaze server image, which includes the search parameters necessary for the CODEX project.
 
-The image is based on Blaze [v0.14.0](https://github.com/samply/blaze/releases/tag/v0.14.0).
+The image is based on Blaze [v0.15.5](https://github.com/samply/blaze/releases/tag/v0.15.5).
 
 ## Start locally
 
@@ -10,7 +10,7 @@ The image is based on Blaze [v0.14.0](https://github.com/samply/blaze/releases/t
 
 ## Build manually
 
-`docker build -t codex-blaze:0.14.0 .`
+`docker build -t codex-blaze:0.15.5 .`
 
 or using docker compose:
 

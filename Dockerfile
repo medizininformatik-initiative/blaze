@@ -1,4 +1,4 @@
-FROM samply/blaze:0.14.0
+FROM samply/blaze:0.15.5
 
 USER root
 
