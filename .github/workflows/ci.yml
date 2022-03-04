@@ -63,7 +63,7 @@ jobs:
       uses: docker/metadata-action@v3
       with:
         images: |
-          ghcr.io/num-codex/blaze
+          ghcr.io/medizininformatik-initiative/blaze
         tags: |
           type=semver,pattern={{version}}
           type=semver,pattern={{major}}.{{minor}}
