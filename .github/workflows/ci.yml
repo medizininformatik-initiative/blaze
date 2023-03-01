@@ -34,8 +34,8 @@ jobs:
         SUCCESS_URI: "http://localhost:8080/fhir/Consent?mii-provision-provision-code-type=2.16.840.1.113883.3.1937.777.24.5.1.1$permit"
         FAILURE_URI: "http://localhost:8080/fhir/Consent?mii-provision-provision-code-type=2.16.840.1.113883.3.1937.777.24.5.1.1$deny"
       run: |
-        curl -s --fail "$SUCCESS_URI" | jq -e '.total == 1'
-        curl -s --fail "$FAILURE_URI" | jq -e '.total == 0'
+        curl -s --fail -H "Prefer: handling=strict" "$SUCCESS_URI" | jq -e '.total == 1'
+        curl -s --fail -H "Prefer: handling=strict" "$FAILURE_URI" | jq -e '.total == 0'
 
   build:
     if: ${{ startsWith(github.ref, 'refs/tags/v') }}

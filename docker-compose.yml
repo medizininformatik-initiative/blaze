@@ -1,4 +1,3 @@
-version: '3.7'
 services:
   fhir-server:
     container_name: fhir-server
