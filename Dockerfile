@@ -1,4 +1,4 @@
-FROM samply/blaze:0.20.2
+FROM samply/blaze:0.20.5
 
 USER root
 
@@ -8,6 +8,6 @@ RUN apt-get update && apt-get upgrade -y && \
     rm -rf /var/lib/apt/lists/
 
 COPY search-parameters.json /app/blaze/db/
-RUN zip blaze-0.20.2-standalone.jar blaze/db/search-parameters.json
+RUN zip blaze-0.20.5-standalone.jar blaze/db/search-parameters.json
 
 USER 1001
